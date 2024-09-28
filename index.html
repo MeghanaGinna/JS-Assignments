@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            let val1 = txtNum1.value
+            let val2 = txtNum2.value
+            val3 = Number(val1) + Number(val2)
+            lblNum.innerHTML = val3;           
+        }
+        function sub(){
+            let val1 = txtNum1.value
+            let val2 = txtNum2.value
+            val3 = val1-val2
+            lblNum.innerHTML = val3;
+        }
+        function mul(){
+            let val1 = txtNum1.value
+            let val2 = txtNum2.value
+            val3 = val1*val2
+            lblNum.innerHTML = val3;
+        }
+
+        function div(){
+            let val1 = txtNum1.value
+            let val2 = txtNum2.value
+            val3 = val1/val2
+            lblNum.innerHTML = val3;
+        }
+    </script>
+</head>
+<body>
+    
+    <input type="number" id="txtNum1">
+    <input type="number" id="txtNum2">
+    <button onclick="add()">Add</button>
+    <button onclick="sub()">Sub</button>
+    <button onclick="mul()">Mul</button>
+    <button onclick="div()">Div</button>
+    <hr>
+    <label id="lblNum"></label>
+</body>
+</html>
