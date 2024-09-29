@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sum of all Odd Numbers between 1-20</h1>
+    <script>
+        let sum=0
+        let num=1
+        document.write("Odd Numbers between 1-20: ")
+        while(num<20){
+           if(num%2 != 0){
+            
+            document.write(num + " ")
+            sum+=num
+           }
+           num++
+        }
+        document.write(` <br> <br> Sum of all Odd Numbers between 1-20: ${sum} `)
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Number Of Vowels in a Word</h1>
+
+    <script>
+
+        let word = prompt(`Enter Any Word`)
+
+        word1 = word.toLowerCase()
+        document.write(`Given Word: ${word}<br>`)
+        
+        let count=0
+        let i =0
+        while(i<word1.length){
+            let ch = word1.charAt(i)
+            if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                count++
+        }
+        i++
+       
+        }
+        
+        document.write(`<br>Number of Vowels in the above Word are: ${count}`)
+    </script>
+</body>
+</html>

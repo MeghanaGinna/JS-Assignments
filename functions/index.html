@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(139, 107, 107);
+        }
+       button{
+        
+        border-radius: 30px;
+       }
+    </style>
     <script>
         function add(){
             let val1 = txtNum1.value
@@ -34,8 +43,9 @@
 </head>
 <body>
     
-    <input type="number" id="txtNum1">
-    <input type="number" id="txtNum2">
+    <input type="number" id="txtNum1" placeholder="Enter a Value">
+    <input type="number" id="txtNum2" placeholder="Enter a Value" >
+    <br><br>
     <button onclick="add()">Add</button>
     <button onclick="sub()">Sub</button>
     <button onclick="mul()">Mul</button>
